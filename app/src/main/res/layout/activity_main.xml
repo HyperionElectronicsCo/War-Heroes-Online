@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/container"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	tools:context=".MainActivity">
+
+	<com.androidx.ao.MyVideoView
+		android:id="@+id/videoView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom|center"
+		android:id="@+id/activitymainRelativeLayout1"
+		android:layout_alignParentBottom="true">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Enter World!"
+			android:layout_marginBottom="32dp"
+			android:textStyle="bold"
+			android:background="@drawable/btn"
+			android:id="@+id/activitymainButton1"
+			android:width="175dp"
+			android:textSize="18sp"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/activitymainRelativeLayout1"
+		android:gravity="bottom|center">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="bottom|center_vertical"
+			android:paddingLeft="32dp"
+			android:paddingRight="32dp"
+			android:paddingTop="4dp"
+			android:paddingBottom="4dp"
+			android:layout_marginBottom="6dp"
+			android:background="@drawable/worldselect">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Realm Select:"
+				android:textStyle="bold"
+				android:textSize="24sp"
+				android:id="@+id/activitymainTextView1"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:inputType="number"
+				android:layout_height="wrap_content"
+				android:ems="3"
+				android:textColorHighlight="#00000000"
+				android:layout_marginBottom="3dp"
+				android:textColorHint="#00000000"
+				android:textColorLink="#00000000"
+				android:hint="1~999"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom|right">
+
+		<Button
+			android:layout_width="75dp"
+			android:layout_height="75dp"
+			android:background="@drawable/settingscog"
+			android:layout_marginBottom="32dp"
+			android:shadowColor="#FF00FFF0"
+			android:shadowRadius="12.5"
+			android:shadowDy="2"
+			android:shadowDx="2"
+			android:id="@+id/settingsButton"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="War&gt;Heroes&gt;\nOnline&gt;"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginTop="54dp"
+			android:id="@+id/HeaderTV"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:textSize="54sp"
+			android:shadowColor="#FF000000"
+			android:shadowRadius="25"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom|left">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Build: 0.98 Alpha"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textStyle="bold"
+			android:layout_marginBottom="35dp"
+			android:textColor="#FFF1FF00"
+			android:layout_marginLeft="10dp"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="top|left">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="&lt;&gt;"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_marginTop="32dp"
+			android:textColor="#FFF1FF00"
+			android:id="@+id/nullTV"
+			android:layout_marginLeft="10dp"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+
